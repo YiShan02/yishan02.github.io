@@ -1,0 +1,63 @@
+#Box1,
+#Box2,
+#Box3,
+#Box4,
+#Box5,
+#Box6,
+#Box7,
+#Box8,
+#Box9 {
+    /*padding: 10px;*/
+    border: 1px #ccc dashed;
+    float: left;
+    margin:12px;
+}
+
+#Box0 {
+    /*width: 500px;
+    height: 500px;*/
+    padding: 10px;
+    border: 1px #706c6c dashed;
+    /*float: left;*/
+    margin: 10px;
+}
+
+div:empty:before {
+    content:attr(data-placeholder);
+    color: #808080b8;
+    font-size: x-large;
+}
+input::-ms-input-placeholder{text-align: center;}
+
+input::-webkit-input-placeholder{text-align: center;}
+
+/* ---------RWD----------- */
+
+@media (min-width:1355px){
+    #Box1,
+    #Box2,
+    #Box3,
+    #Box4,
+    #Box5,
+    #Box6,
+    #Box7,
+    #Box8,
+    #Box9 {
+        width: 100px;
+        height: 100px;
+    }
+}
+@media (max-width:1354px){
+    #Box1,
+    #Box2,
+    #Box3,
+    #Box4,
+    #Box5,
+    #Box6,
+    #Box7,
+    #Box8,
+    #Box9 {
+        width: 85px;
+        height: 85px;
+    }
+}

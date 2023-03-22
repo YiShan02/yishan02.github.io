@@ -1,0 +1,575 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ---------------------共用設定------------------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 17px;
+
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    -webkit-text-size-adjust: none;
+    font-weight: bold !important;
+}
+
+body {
+    --webkit-font-smoothing: antialiased;
+    font-family: 微軟正黑體, Arial, Helvetica, sans-serif;
+    /* line-height: 1.8; */
+    background-color: #f2f2f2;
+    color: #555;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#WRAPPER {
+    width: 100%;
+    height: 85%;
+}
+
+.container-fluid {
+    padding: 0;
+}
+.footer {
+    height: 15%;
+    display: table;
+    margin: auto;
+}
+
+header .logo {
+    max-width: 800px;
+    --webkit-filter: drop-shadow(1px 1px 0px #fff);
+    filter: drop-shadow(1px 1px 0px #fff);
+    display: block;
+    margin: auto;
+    padding: 15px 0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul {
+    padding-left: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.form-control {
+    height: auto;
+    padding: .25rem .5rem;
+    /* font-size: 1rem; */
+}
+
+.form-control-sm {
+    font-size: .875rem;
+}
+/* ---------------------選擇工程------------------------*/
+.cardpd {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: inherit;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff6;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 2rem;
+    margin: 0px 30px;
+    height: 85vh
+}
+
+.titleh {
+    padding: 10px 0 0 0;
+    color: black;
+    text-align: center;
+}
+.wbtncol{
+    display: flex; 
+    width: 96%;
+}
+
+.whitebg{
+    background-color: #fff;
+    background-clip: border-box;
+    position: relative;
+    display: -ms-flexbox;
+    -ms-flex-direction: column;
+    flex-direction: inherit;
+    min-width: 0;
+    background-clip: border-box;
+    border: 1.5px solid rgb(0 0 0 / 37%);
+    border-radius: 0.25rem;
+    margin: 5px;
+    padding: 5px;
+}
+.whitebg:hover{
+    background-color: #d6d6d6;
+}
+.whitebg:focus{
+    background-color: #1D3770;
+    color: #fff;
+}
+
+.project_name {
+    font-size: 20px;
+    padding: 4px 0 5px 0;
+}
+.data_name {
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 0 0 5px 0;
+    color: black;
+    /*margin: -5px 0 0 0;*/
+    text-align:center;
+}
+
+.drag {
+    width: 100px;
+    /*margin: -11px 0 0 -11px*/
+}
+
+.imgt1 {
+    width: 100%;
+    height: 22vh;
+    margin: 10px 0;
+}
+.imgt2 {
+    width: 100px;
+    height: 100px;
+    /*margin: 10px 0px 0 5px;*/
+    padding: 4px;
+    position: sticky;
+    z-index: 3;
+}
+.imgt3 {
+    width: 100%;
+    height: 12vh;
+    /*margin: 10px 0;*/
+}
+
+.jiugongge {
+    background: url(../images/Jiugongge.png) center no-repeat;
+    background-size: contain;
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+.jiugongge1 {
+    display: grid;
+    padding: 40px;
+}
+.ninebox{
+    margin: 10px;
+}
+
+.carbonm{
+    margin: 0 auto;
+    font-size: 1.5rem;
+    line-height: inherit;
+    border-radius: 15px;
+    background-color: #f8f8f8;
+    text-align: center;
+    display: flex;
+    max-width: 100%;
+}
+
+.indext {
+    padding: 5px 160px;
+    font-size: 1.2rem;
+    margin: 0 0 -20px 0;
+}
+
+.text01{
+    background-color: #f0ffff;
+    margin: 10px 0px 5px 0px;
+    padding: 10px 5px;
+    border-radius: 1rem;
+    box-shadow: 0 2px 6px #929292;
+}
+.text02{
+    background-color: #e1f8fede;
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 3px #929292;
+    margin: 5px 0px 10px 0px;
+    padding: 10px 0 10px 0;
+}
+.texth6{
+    font-size: 1.2rem !important;
+    font-weight: bold !important;
+    padding: 6px 10px !important;
+    color: #2E2A25 !important;
+    line-height: initial;
+    margin: 0 0 -5px 0;
+}
+.texth7{
+    padding: 6px 10px !important;
+    color: #2E2A25 !important;
+    line-height: initial;
+    margin: 0 0 -5px 0;
+}
+.textsize0{
+    margin: 0 0 5px 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #06137f;
+}
+.textsize{
+    color: #2E2A25 !important;
+    font-weight: 500;
+    margin: 0;
+}
+
+.chofl{
+    display: flex;
+    padding: 20px;
+}
+
+.workth5{
+    color: #062421;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.5;
+    margin: 2.2rem 0 0;
+    padding-left: 9px;
+    border-left: 7px solid;
+    border-radius: 3px;
+}
+.textco{
+    text-align: center;
+    padding: 10px 0 0 10px;
+    color: #112055;
+    font-size: 1.6rem;
+}
+.btncheck{
+    height: 15%;
+    display: table;
+    margin: auto;
+}
+/* ---------footer---------- */
+.play1 {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+}
+.play2 {
+    position: relative;
+    /*top: 30%;
+    left: 58%;*/
+    right: 0%;
+    touch-action: manipulation;
+    cursor: pointer;
+}
+.play3 {
+    position: relative;
+    right: 40%;
+    touch-action: manipulation;
+    cursor: pointer;
+}
+.play4 {
+    position: relative;
+    right: 20%;
+    touch-action: manipulation;
+    cursor: pointer;
+    width: fit-content;
+    height: fit-content;
+}
+.play5 {
+    position: relative;
+    right: 0%;
+    touch-action: manipulation;
+    cursor: pointer;
+}
+/* ---------------------輪播圖------------------------*/
+.slider {
+    width: 90%;
+    margin: 0 50px 0 50px;
+}
+
+.slick-slide {
+  margin: 0px 20px;
+}
+
+/*.slick-slide img {
+  width: 100%;
+}*/
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+
+.slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: .2;
+}
+
+.slick-active {
+  opacity: .5;
+}
+
+.slick-current {
+  opacity: 1;
+}
+
+/* -------------------彈出視窗----------------------*/
+
+dialog{
+  border: none;
+  box-shadow: 0 2px 6px #777;
+  border-radius: 10px;
+}
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.fomp{
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 0.4rem;
+    color: #12504a;
+}
+
+.imgfom{
+    width: 26vw;
+    border-radius: 1rem;
+}
+
+.btcolor{
+    background-color: #fff;
+    position: relative;
+    border: 1.5px solid rgb(0 0 0 / 37%);
+    border-radius: 0.25rem;
+    margin: 13px;
+    padding: 5px;
+    color: #0e0e0e;
+    font-weight: 700;
+    text-align: center;
+}
+.btcolor:hover{
+    background-color: #007f7e;
+    border: 1.5px solid rgb(0 0 0 / 37%);
+    border-radius: 0.25rem;
+    margin: 13px;
+    padding: 5px;
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* ---------------------區塊------------------------*/
+
+body.index {
+    background: url(../images/Background.png) left center no-repeat;
+    background-size: cover;
+    padding: 0;
+}
+.zindextext{
+    position: absolute;
+    z-index: 0;
+    color: #a7a7a7;
+    font-size: 1.4rem;
+    padding: 0 0 0 8px;
+}
+
+.top20{
+    top: 20%;
+}
+.top47{
+    top: 46.5%;
+}
+.top73{
+    top: 72.5%;
+}
+
+#Box1 .top20{
+    padding: 0 0 0 12px;
+}
+#Box2 .top20{
+    padding: 0 0 0 23px;
+}
+#Box3 .top20{
+    padding: 0 0 0 23px;
+}
+#Box4 .top47{
+    padding: 0 0 0 23px;
+}
+#Box5 .top47{
+    padding: 0 0 0 23px;
+}
+#Box6 .top47{
+    padding: 0 0 0 23px;
+}
+#Box7 .top73{
+    padding: 0 0 0 23px;
+}
+#Box8 .top73{
+    padding: 0 0 0 23px;
+}
+#Box9 .top73{
+    padding: 0 0 0 23px;
+}
+
+/* ------按鈕----- */
+.button {
+    display: flex;
+    position: relative;
+    /* background: linear-gradient(to bottom, #bdefe7, #63bdad); */
+    min-width: 14em;
+    min-height: 4em;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.button .text {
+    position: absolute;
+    z-index: 1;
+    top: -1px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.button .background {
+    position: absolute;
+    top: -3px;
+    left: -1px;
+    height: 100%;
+    width: calc(100% + 2px);
+    /* background: #bdefe7; */
+    border-radius: 3px;
+}
+
+.button:active .text {
+    top: 1px;
+}
+
+.button:active .background {
+    top: -1px;
+}
+
+/* ---------banner---------- */
+a.header {
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 212px;
+    background: url(../images/banner.png) no-repeat center center;
+    background-size: cover;
+    margin-top: 130px;
+}
+
+.header img {
+    height: 100%;
+}
+
+/* ---------標題設定----------- */
+
+h1 {
+    font-size: 1.75rem !important;
+    font-weight: bold !important;
+    clear: both !important;
+    padding: 8px 8px !important;
+    /* background: -webkit-linear-gradient(right, #5d9d9f, #58a274) !important;
+    background: -o-linear-gradient(left, #5d9d9f, #58a274) !important;
+    background: -moz-linear-gradient(left, #5d9d9f, #58a274) !important;
+    background: linear-gradient(to left, #5d9d9f, #58a274) !important;*/
+    color: #2E2A25 !important;
+    border-radius: 5px !important;
+}
+
+.h1blue {
+    background: -webkit-linear-gradient(right, rgb(101 196 218 / 0%), #007bff) !important;
+    background: -o-linear-gradient(left, rgb(101 196 218 / 0%), rgb(53 167 234)) !important;
+    background: -moz-linear-gradient(left, rgb(101 196 218 / 0%), rgb(53 167 234)) !important;
+    background: linear-gradient(to left, rgb(101 196 218 / 0%), #007bff) !important;
+    color: #fff !important;
+    border-radius: 3px !important;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    vertical-align: middle;
+    margin: 1.5rem 0;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+h4 {
+    margin-bottom: 0;
+    margin: -5px 0 -2px 0;
+}
+
+h5 {
+    color: #007065;
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.5;
+    margin: 2rem 0 1rem;
+    padding-left: 9px;
+    border-left: 7px solid;
+    border-radius: 3px;
+}
+
+.small-red {
+    color: #e91e63;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.small-green {
+    color: #5d9d9f;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+/* ---------RWD----------- */
+
+@media (min-width:1415px){
+    .ninebox{
+        padding: 40px;
+    }
+}
+@media (max-width:1414px){
+    .ninebox{
+        padding: 30px;
+    }
+}
+@media (min-width:1355px){
+    .imgt2 {
+        width: 100px;
+        height: 100px;
+    }
+}
+@media (max-width:1354px){
+    .imgt2 {
+        width: 85px;
+        height: 85px;
+    }
+}
